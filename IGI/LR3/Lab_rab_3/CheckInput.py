@@ -1,0 +1,26 @@
+def float_input(left, right, bound: bool) -> float:
+    while True:
+        try:
+            res = float(input())
+            if (res < left or res > right) and bound:
+                print(f"Input number is bounding between {left} and {right}")
+                print("Try again: ", end="")
+            else:
+                break
+        except ValueError:
+            print("This is not a float! Try again: ", end="")
+    return res
+
+
+def int_input(left, right, bound: bool) -> int:
+    while True:
+        try:
+            res = int(input())
+            if (res < left or res > right) and bound:
+                print(f"Input number is bounding between {left} and {right}")
+                print("Try again: ", end="")
+            else:
+                break
+        except ValueError:
+            print("This is not a int! Try again: ", end="")
+    return int(res)
