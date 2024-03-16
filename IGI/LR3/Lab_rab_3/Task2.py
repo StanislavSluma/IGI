@@ -16,6 +16,7 @@ def cycle(use_generator: bool, amount: int) -> int:
     :return:
     Result of sum all values
     """
+
     res = 0
     if use_generator:
         for i in num_generator(amount):

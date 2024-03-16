@@ -8,7 +8,8 @@ def float_input(left, right, bound: bool) -> float:
             else:
                 break
         except ValueError:
-            print("This is not a float! Try again: ", end="")
+            print("This is not a float!")
+            print("Try again: ", end="")
     return res
 
 
@@ -22,5 +23,6 @@ def int_input(left, right, bound: bool) -> int:
             else:
                 break
         except ValueError:
-            print("This is not a int! Try again: ", end="")
+            print("This is not a int!")
+            print("Try again: ", end="")
     return int(res)

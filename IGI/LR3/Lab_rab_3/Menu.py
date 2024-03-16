@@ -9,8 +9,9 @@ from Task5 import list_analyze
 
 
 def menu():
+    print("\nLab_Rab_3:  Python")
     while True:
-        print("\n")
+        print("")
         print("Enter 0 >>> exit")
         print("Enter 1 >>> Task1 (Tailor_Func)")
         print("Enter 2 >>> Task2 (Sum cycle)")
