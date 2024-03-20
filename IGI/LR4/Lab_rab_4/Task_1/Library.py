@@ -25,7 +25,7 @@ class Library:
                 except ValueError:
                     continue
 
-    def get_books(self, author_name):
+    def get_books(self, author_name, default=None):
         if self.__dict_lib.get(author_name, "not_found") != "not_found":
             return self.__dict_lib[author_name].copy()
-        return list()
+        return default
