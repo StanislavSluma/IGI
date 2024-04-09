@@ -1,5 +1,6 @@
 from Task_1.Complete import complete_task1
 from Task_2.Complete import complete_task2
+from Task_3.Complete import complete_task3
 
 
 def menu():
@@ -20,7 +21,7 @@ def menu():
         elif choose == "2":
             complete_task2()
         elif choose == "3":
-            print("Task_3")
+            complete_task3()
         elif choose == "4":
             print("Task_4")
         elif choose == "5":
