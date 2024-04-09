@@ -1,18 +1,21 @@
+import copy
 import re
 from zipfile import *
 
-def complete_common():
-    with open("Task_2/text_task2.txt", "r") as file:
-        text = file.read()
+
+def complete_common(text):
     print("English text: ")
     print(text)
-    sen_declarative = re.findall(r"[\w\s,:;’'\-\"]+\.", text)
-    sen_interrogative = re.findall(r"[\w\s,:;’'\-\"]+\?", text)
-    sen_exclamatory = re.findall(r"[\w\s,:;’'\-\"]+!", text)
+    sen_declarative = re.findall(r"[\w\s,:;’'\-\"()]+\.", text)
+    sen_interrogative = re.findall(r"[\w\s,:;’'\-\"()]+\?", text)
+    sen_exclamatory = re.findall(r"[\w\s,:;’'\-\"()]+!", text)
     count_decl = len(sen_declarative)
     count_inter = len(sen_interrogative)
     count_excl = len(sen_exclamatory)
     count_all = count_decl + count_inter + count_excl
+    if count_all == 0:
+        print("Amount of sentence not be a zero number!")
+        return False
     print(f"Amount of sentence in text: {count_all}")
     print(f"Amount of declarative sentence in text: {count_decl}")
     #print(sen_declarative)
@@ -20,7 +23,7 @@ def complete_common():
     #print(res_interrogative)
     print(f"Amount of exclamatory sentence in text: {count_excl}")
     #print(res_exclamatory)
-    words = re.findall(r"[\w’'\-]+", text)
+    words = re.findall(r"[\w’'\-]*\w", text)
     average_amount_of_words = len(words)//count_all
     print(f"Average amount of words in sentence: {average_amount_of_words}")
     letters_amount = 0
@@ -30,6 +33,7 @@ def complete_common():
     print(f"Average amount of letters in word: {average_amount_of_letters}")
     smiles = [smile[0] for smile in re.findall(r"([;:]-*(\(+|\)+|{+|}+|\[+|]+))", text)]
     print(f"Amount of smiles in text: {len(smiles)}")
+
     #print(smiles)
 
     # with open("Task_2/save_task2.txt", "w") as file:
@@ -40,13 +44,12 @@ def complete_common():
     #     file.write(f"Average amount of words in sentence: {average_amount_of_words}\n")
     #     file.write(f"Average amount of letters in word: {average_amount_of_letters}\n")
     #     file.write(f"Amount of smiles in text: {len(smiles)}\n")
+    return True
 
 
-def complete_individual():
-    with open("Task_2/text_task2.txt", "r") as file:
-        text = file.read()
+def complete_individual(text):
 
-    words = re.findall(r"[\w’'\-]+", text)
+    words = re.findall(r"[\w’'\-]*\w", text)
     print("All words in list: ")
     print(words)
 
@@ -74,7 +77,6 @@ def complete_individual():
         file.write(new_text)
 
     with ZipFile("Task_2/zipfile_task2.zip", "w") as myzip:
-        # записываем в архив новый файл "hello5.txt"
         with myzip.open("modified_text.txt", "w") as file:
             encoded_str = bytes(new_text, "UTF-8")
             file.write(encoded_str)
@@ -86,7 +88,15 @@ def complete_individual():
 
 
 def complete_task2():
-    complete_common()
-    complete_individual()
+    ch = input("Use individual or default text? [i/d]\n")
+    if ch.lower() == "i":
+        text = input("Enter a text please: ")
+        if complete_common(copy.copy(text)):
+            complete_individual(text)
+    else:
+        with open("Task_2/text_task2.txt", "r") as file:
+            text = file.read()
+        if complete_common(copy.copy(text)):
+            complete_individual(text)
     input("Enter to continue...")
 

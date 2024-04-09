@@ -1,5 +1,6 @@
 from Task_1.Library import Library
 from Task_1.Serializer import Serializer
+from Checkinput import *
 
 
 def complete_task1():
@@ -23,7 +24,8 @@ def complete_task1():
             break
         elif choose == "1":
             author = input("Enter a author name: ")
-            cycle = int(input("How many books you want to added: ")) # check input !!!!
+            print("How many books you want to added: ", end="")
+            cycle = int_input(1, 10)
             books = list()
             while cycle > 0:
                 books.append(input("Enter a book name: "))
@@ -32,7 +34,8 @@ def complete_task1():
             input("Enter to continue...")
         elif choose == "2":
             author = input("Enter a author name: ")
-            cycle = int(input("How many books you want to deleted: "))  # do a check
+            print("How many books you want to deleted: ", end="")  # do a check
+            cycle = int_input(1, 10)
             books = list()
             while cycle > 0:
                 books.append(input("Enter a book name: "))
