@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20478b1e-179d-40a7-9af4-a538e13640d1" name="Changes" comment="" />
+    <list default="true" id="20478b1e-179d-40a7-9af4-a538e13640d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../LR4/Lab_rab_4/Chaeckinput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR4/Lab_rab_4/.idea/Lab_rab_4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR4/Lab_rab_4/.idea/Lab_rab_4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR4/Lab_rab_4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR4/Lab_rab_4/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR4/Lab_rab_4/Task_1/Complete.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR4/Lab_rab_4/Task_1/Complete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR4/Lab_rab_4/Task_1/Library.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/../../LR4/Lab_rab_4/Task_1/Library.pickle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,18 +37,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "IGI__LR4"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;IGI__LR4&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-d68999036c7f-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.14475.56" />
+        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
       </set>
     </attachedChunks>
   </component>

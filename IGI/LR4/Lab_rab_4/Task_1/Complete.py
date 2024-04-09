@@ -23,7 +23,7 @@ def complete_task1():
             break
         elif choose == "1":
             author = input("Enter a author name: ")
-            cycle = int(input("How many books you want to added: ")) # do a check
+            cycle = int(input("How many books you want to added: ")) # check input !!!!
             books = list()
             while cycle > 0:
                 books.append(input("Enter a book name: "))
