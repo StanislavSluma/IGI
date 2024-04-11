@@ -24,7 +24,7 @@ class Serializer:
         return new_dict
 
     @staticmethod
-    def serialize_pickle(filename, dictionary: dict):
+    def serialize_pickle(filename, dictionary):
         with open(filename, "wb+") as file:
             pickle.dump(dictionary, file)
 

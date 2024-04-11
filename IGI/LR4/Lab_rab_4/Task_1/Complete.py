@@ -5,10 +5,10 @@ from Checkinput import *
 
 def complete_task1():
     try:
-        library = Library(Serializer.deserialize_pickle("Task_1/Library.pickle"))
+        library = Serializer.deserialize_pickle("Task_1/Library.pickle")
     except BaseException:
         library = Library()
-        Serializer.serialize_pickle("Task_1/Library.pickle", library.dict_lib)
+        Serializer.serialize_pickle("Task_1/Library.pickle", library)
 
     print("Wellcome to library!")
     print("Enter a number, please\n")
@@ -20,7 +20,8 @@ def complete_task1():
         print("4 >> Print all library")
         choose = input()
         if choose == "0":
-            Serializer.serialize_pickle("Task_1/Library.pickle", library.dict_lib)
+            Serializer.serialize_pickle("Task_1/Library.pickle", library)
+            Serializer.serialize("Task_1/Library.csv", library.dict_lib)
             break
         elif choose == "1":
             author = input("Enter a author name: ")

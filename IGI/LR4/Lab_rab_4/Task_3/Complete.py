@@ -1,6 +1,7 @@
+import random
+
 from Checkinput import *
 from Task_3.ExtraOptions import *
-import math
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -17,8 +18,14 @@ def complete_task3():
             print("Size of array: ", end="")
             size = int_input(1, 16)
             coll = list()
-            for i in range(0, size):
-                coll.append(float_input(0.0, 0.0, False))
+            ch = input("Use auto generate? [Y/n]\n")
+            if ch.lower() == 'n':
+                for i in range(0, size):
+                    coll.append(float_input(0.0, 0.0, False))
+            else:
+                for i in range(0, size):
+                    coll.append(random.random())
+                print(coll)
             print(f"Average value: {ExtraOptions.average(coll)}")
             print(f"Median value: {ExtraOptions.median(coll)}")
             print("Moda value: ")
@@ -53,10 +60,10 @@ def complete_task3():
             plt.xlabel(r'$x$')
             plt.ylabel(r'$f(x)$')
             plt.legend(loc='best', fontsize=8)
-            plt.savefig('Task_3/figure_with_legend.png')
+            plt.savefig('Task_3/graphics_with_legend.png')
             plt.show()
         else:
-            print("Enter only 0, 1, 2, 3, 4!")
+            print("Enter only 0, 1, 2!")
             input("Enter to continue...")
 
 

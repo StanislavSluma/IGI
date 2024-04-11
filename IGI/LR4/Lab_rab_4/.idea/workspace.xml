@@ -5,11 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de634c2d-5346-4cf3-a7d7-e6b15f9b800c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Task_4/Figure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_4/Shape.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_4/ShapeColor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_4/ShapeMixin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_4/Trapezoid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task_5/Complete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LR3/Lab_rab_3/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Lab_rab_4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lab_rab_4.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1/Complete.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1/Complete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1/Library.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1/Library.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1/Library.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1/Library.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_1/Serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task_1/Serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_2/Complete.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task_2/Complete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_2/save_task2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Task_2/save_task2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_2/text_task2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Task_2/text_task2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_2/zipfile_task2.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Task_2/zipfile_task2.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Task_3/Complete.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task_3/Complete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_3/figure_with_legend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task_4/Figure.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task_4/Complete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Лабораторная работа 4 Python.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Лабораторная работа 4 Python.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +43,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2esSOtadCxBXU94xPiO31qKGN1Q" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,10 +53,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Complete.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "IGI__LR4"
+    "git-widget-placeholder": "IGI__LR4",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RunManager">
